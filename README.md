@@ -2,6 +2,8 @@
 > Tools for go pkgs's inspection and analysis.
 > Base on golang.org/x/tools/go/packages
 
+![alt text](./img/dep-tree.png)
+
 ## Installation
 
 ```sh
