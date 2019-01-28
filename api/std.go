@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// Used for GetStdMap's fast path
 var GoStdList string
 
 func GetStdMap() (map[string]struct{}, error) {
@@ -23,9 +24,6 @@ func GetStdMap() (map[string]struct{}, error) {
 	}
 	var stdMap = make(map[string]struct{}, len(pkgs))
 	for _, pkg := range pkgs {
-		if strings.HasPrefix(pkg.ID, "vendor") {
-			continue
-		}
 		stdMap[pkg.ID] = struct{}{}
 	}
 	return stdMap, nil
