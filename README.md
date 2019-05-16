@@ -6,7 +6,7 @@ Print go dependency tree
 ## Installation
 
 ```sh
-go get github.com/MaruHyl/gotree/cmd
+go get github.com/MaruHyl/gotree/gotree
 ```
 
 ## Command Help
